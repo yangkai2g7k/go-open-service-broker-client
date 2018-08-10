@@ -23,8 +23,7 @@ import (
 
 	"sort"
 
-	v2 "github.com/kubernetes-sigs/go-open-service-broker-client/v2"
-	"k8s.io/klog"
+	"github.com/maplain/go-open-service-broker-client/v2"
 )
 
 // GetCatalog will produce a valid GetCatalog response based on the generator settings.
