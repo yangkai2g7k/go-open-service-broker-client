@@ -21,6 +21,8 @@ const (
 	// the client allows a request to complete asynchronously.
 	AcceptsIncomplete = "accepts_incomplete"
 
+	Force = "force"
+
 	// VarKeyInstanceID is the name to use for a mux var representing an
 	// instance ID.
 	VarKeyInstanceID = "instance_id"

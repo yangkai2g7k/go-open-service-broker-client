@@ -35,6 +35,9 @@ func (c *client) DeprovisionInstance(r *DeprovisionRequest) (*DeprovisionRespons
 	if r.AcceptsIncomplete {
 		params[AcceptsIncomplete] = "true"
 	}
+	if r.Force {
+		params[Force] = "true"
+	}
 
 	response, err := c.prepareAndDo(http.MethodDelete, fullURL, params, nil, r.OriginatingIdentity)
 	if err != nil {

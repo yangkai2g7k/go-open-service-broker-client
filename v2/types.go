@@ -367,6 +367,7 @@ type DeprovisionRequest struct {
 	ServiceID string `json:"service_id"`
 	// PlanID is the ID of the plan the instance is provisioned from.
 	PlanID string `json:"plan_id"`
+	Force  bool   `json:"force"`
 	// OriginatingIdentity requires a client API version >= 2.13.
 	//
 	// OriginatingIdentity is the identity on the platform of the user making
